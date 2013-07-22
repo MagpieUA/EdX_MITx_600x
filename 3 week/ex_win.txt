@@ -1,0 +1,41 @@
+Loading word list from file...
+	55900 words loaded.
+	Welcome to the game, Hangman!
+	I am thinking of a word that is 4 letters long.
+	-------------
+	You have 8 guesses left.
+	Available letters: abcdefghijklmnopqrstuvwxyz
+	Please guess a letter: a
+	Good guess: _ a_ _
+	------------
+	You have 8 guesses left.
+	Available letters: bcdefghijklmnopqrstuvwxyz
+	Please guess a letter: a
+	Oops! You've already guessed that letter: _ a_ _
+	------------
+	You have 8 guesses left.
+	Available letters: bcdefghijklmnopqrstuvwxyz
+	Please guess a letter: s
+	Oops! That letter is not in my word: _ a_ _
+	------------
+	You have 7 guesses left.
+	Available letters: bcdefghijklmnopqrtuvwxyz
+	Please guess a letter: t
+	Good guess: ta_ t
+	------------
+	You have 7 guesses left.
+	Available letters: bcdefghijklmnopqruvwxyz
+	Please guess a letter: r
+	Oops! That letter is not in my word: ta_ t
+	------------
+	You have 6 guesses left.
+	Available letters: bcdefghijklmnopquvwxyz
+	Please guess a letter: m
+	Oops! That letter is not in my word: ta_ t
+	------------
+	You have 5 guesses left.
+	Available letters: bdefghijklmnopquvwxyz
+	Please guess a letter: c
+	Good guess: tact
+	------------
+	Congratulations, you won!

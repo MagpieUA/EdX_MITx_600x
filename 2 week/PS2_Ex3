@@ -1,0 +1,19 @@
+balance = 999999
+annualInterestRate = 0.18
+monthlyInterestRate = annualInterestRate/12.0
+lo = balance/12
+hi = (balance*(1+monthlyInterestRate)**12)/12
+tempBalance = balance
+while  (abs(tempBalance) > 0.01) :
+    tempBalance = balance
+    monthlyPayment = (lo + hi)/2
+    for month in range(1,13):
+        monthlyUnpaidBalance = tempBalance - monthlyPayment
+        tempBalance = monthlyUnpaidBalance + annualInterestRate/12.0*\
+                  monthlyUnpaidBalance
+ #  print (lo, hi, monthlyPayment, tempBalance)
+    if tempBalance > 0.01:
+        lo = monthlyPayment
+    if tempBalance < -0.01:
+        hi = monthlyPayment       
+print('Lowest Payment: %.2f' % monthlyPayment)

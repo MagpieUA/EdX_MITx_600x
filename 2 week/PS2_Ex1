@@ -1,0 +1,15 @@
+balance = 4842
+annualInterestRate = 0.2
+monthlyPaymentRate = 0.04
+totalPaid = 0
+for month in range(1,13):
+    print ('Month: %d' % month)
+    monthlyMinPayment = monthlyPaymentRate*balance
+    print ('Minimum monthly payment: %.2f' % monthlyMinPayment)
+    monthlyUnpaidBalance = balance - monthlyMinPayment
+    balance = monthlyUnpaidBalance + annualInterestRate/12.0*\
+        monthlyUnpaidBalance
+    print ('Remaining balance: %.2f' % balance)
+    totalPaid += monthlyMinPayment
+print('Total paid: %.2f' % totalPaid)
+print('Remaining balance: %.2f' % balance)
